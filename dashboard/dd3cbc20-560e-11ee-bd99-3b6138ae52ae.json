@@ -1,0 +1,384 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : "Stanza con termostati",
+      "widgets" : {
+        "41999fb8-3690-8968-8991-c1d66a981dd1" : {
+          "isSystemType" : true,
+          "bundleAlias" : "cards",
+          "typeAlias" : "timeseries_table",
+          "type" : "timeseries",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 8,
+          "sizeY" : 6.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "d048adb8-465d-590f-4b19-fd6b70b932d3",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "temperature",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5126987403098886
+              } ],
+              "latestDataKeys" : [ ]
+            } ],
+            "timewindow" : {
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 3600000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "showTimestamp" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10
+            },
+            "title" : "New Timeseries table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "widgetStyle" : { },
+            "actions" : {
+              "rowClick" : [ {
+                "name" : "termometro",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "dettaglio",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "114f06f0-a275-47a5-1cee-648c31e6cc73"
+              } ]
+            },
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "41999fb8-3690-8968-8991-c1d66a981dd1"
+        },
+        "2f6012f3-6856-d9cf-626a-af82b7207a62" : {
+          "isSystemType" : true,
+          "bundleAlias" : "analogue_gauges",
+          "typeAlias" : "temperature_gauge_canvas_gauges",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 7,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "57da0473-5dbf-9546-dc29-8cae99009828",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "temperature",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.26432036380585355
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1694948009029,
+                  "endTimeMs" : 1695034409029
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "maxValue" : 100,
+              "defaultColor" : "#e64a19",
+              "barStrokeWidth" : 2.5,
+              "colorBar" : "rgba(255, 255, 255, 0.4)",
+              "colorBarEnd" : "rgba(221, 221, 221, 0.38)",
+              "showUnitTitle" : true,
+              "minorTicks" : 2,
+              "valueBox" : true,
+              "valueInt" : 3,
+              "colorPlate" : "#fff",
+              "colorMajorTicks" : "#444",
+              "colorMinorTicks" : "#666",
+              "colorNeedleShadowUp" : "rgba(2,255,255,0.2)",
+              "colorNeedleShadowDown" : "rgba(188,143,143,0.45)",
+              "colorValueBoxRect" : "#888",
+              "colorValueBoxRectEnd" : "#666",
+              "colorValueBoxBackground" : "#babab2",
+              "colorValueBoxShadow" : "rgba(0,0,0,1)",
+              "highlightsWidth" : 10,
+              "animation" : true,
+              "animationDuration" : 1500,
+              "animationRule" : "linear",
+              "showBorder" : false,
+              "majorTicksCount" : 8,
+              "numbersFont" : {
+                "family" : "Arial",
+                "size" : 18,
+                "style" : "normal",
+                "weight" : "normal",
+                "color" : "#263238"
+              },
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 24,
+                "style" : "normal",
+                "weight" : "normal",
+                "color" : "#78909c"
+              },
+              "unitsFont" : {
+                "family" : "Roboto",
+                "size" : 26,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#37474f"
+              },
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 40,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#444",
+                "shadowColor" : "rgba(0,0,0,0.3)"
+              },
+              "minValue" : -60,
+              "highlights" : [ {
+                "from" : -60,
+                "to" : -40,
+                "color" : "#90caf9"
+              }, {
+                "from" : -40,
+                "to" : -20,
+                "color" : "rgba(144, 202, 249, 0.66)"
+              }, {
+                "from" : -20,
+                "to" : 0,
+                "color" : "rgba(144, 202, 249, 0.33)"
+              }, {
+                "from" : 0,
+                "to" : 20,
+                "color" : "rgba(244, 67, 54, 0.2)"
+              }, {
+                "from" : 20,
+                "to" : 40,
+                "color" : "rgba(244, 67, 54, 0.4)"
+              }, {
+                "from" : 40,
+                "to" : 60,
+                "color" : "rgba(244, 67, 54, 0.6)"
+              }, {
+                "from" : 60,
+                "to" : 80,
+                "color" : "rgba(244, 67, 54, 0.8)"
+              }, {
+                "from" : 80,
+                "to" : 100,
+                "color" : "#f44336"
+              } ],
+              "unitTitle" : "Temperature",
+              "units" : "°C",
+              "colorBarProgress" : "#90caf9",
+              "colorBarProgressEnd" : "#f44336",
+              "colorBarStroke" : "#b0bec5",
+              "valueDec" : 1
+            },
+            "title" : "New Thermometer scale",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2f6012f3-6856-d9cf-626a-af82b7207a62"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Stanza1",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "41999fb8-3690-8968-8991-c1d66a981dd1" : {
+                  "sizeX" : 8,
+                  "sizeY" : 6,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "dettaglio" : {
+          "name" : "dettaglio",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "2f6012f3-6856-d9cf-626a-af82b7207a62" : {
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "d048adb8-465d-590f-4b19-fd6b70b932d3" : {
+          "id" : "d048adb8-465d-590f-4b19-fd6b70b932d3",
+          "alias" : "stanza",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "5395ef50-560e-11ee-bd99-3b6138ae52ae", "79537eb0-560e-11ee-bd99-3b6138ae52ae" ]
+          }
+        },
+        "57da0473-5dbf-9546-dc29-8cae99009828" : {
+          "id" : "57da0473-5dbf-9546-dc29-8cae99009828",
+          "alias" : "ciao",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : null
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1694947192259,
+            "endTimeMs" : 1695033592259
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "dd3cbc20-560e-11ee-bd99-3b6138ae52ae"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Stanza1",
+    "title" : "Stanza1"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
