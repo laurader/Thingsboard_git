@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : null,
+    "assignedCustomers" : [ ],
     "configuration" : {
       "description" : "Stanza con termostati",
       "widgets" : {
@@ -59,7 +59,7 @@
               "displayPagination" : true,
               "defaultPageSize" : 10
             },
-            "title" : "New Timeseries table",
+            "title" : "Prova",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
@@ -89,7 +89,11 @@
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
-            "displayTimewindow" : true
+            "displayTimewindow" : true,
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
@@ -134,8 +138,8 @@
                 "interval" : 1000,
                 "timewindowMs" : 60000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1694948009029,
-                  "endTimeMs" : 1695034409029
+                  "startTimeMs" : 1694954404486,
+                  "endTimeMs" : 1695040804486
                 },
                 "quickInterval" : "CURRENT_DAY"
               },
@@ -366,7 +370,10 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "dd3cbc20-560e-11ee-bd99-3b6138ae52ae"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "dd3cbc20-560e-11ee-bd99-3b6138ae52ae"
