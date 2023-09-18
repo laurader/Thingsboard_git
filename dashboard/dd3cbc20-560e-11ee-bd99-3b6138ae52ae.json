@@ -259,6 +259,94 @@
           "row" : 0,
           "col" : 0,
           "id" : "2f6012f3-6856-d9cf-626a-af82b7207a62"
+        },
+        "6e45ed68-7ee3-7dca-79c0-c91506bf5261" : {
+          "isSystemType" : true,
+          "bundleAlias" : "cards",
+          "typeAlias" : "entities_table",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 7.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1694957007783,
+                  "endTimeMs" : 1695043407783
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "entitiesTitle" : "",
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true,
+              "enableStickyHeader" : true,
+              "enableStickyAction" : true,
+              "reserveSpaceForHiddenAction" : "true",
+              "displayEntityName" : true,
+              "entityNameColumnTitle" : "",
+              "displayEntityLabel" : false,
+              "displayEntityType" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "entityName",
+              "useRowStyleFunction" : false
+            },
+            "title" : "New Entities table",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "d048adb8-465d-590f-4b19-fd6b70b932d3",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.553318935974318
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6e45ed68-7ee3-7dca-79c0-c91506bf5261"
         }
       },
       "states" : {
@@ -273,13 +361,20 @@
                   "sizeY" : 6,
                   "row" : 0,
                   "col" : 0
+                },
+                "6e45ed68-7ee3-7dca-79c0-c91506bf5261" : {
+                  "sizeX" : 7,
+                  "sizeY" : 6,
+                  "row" : 0,
+                  "col" : 9
                 }
               },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
                 "margin" : 10,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "outerMargin" : true
               }
             }
           }
@@ -301,7 +396,8 @@
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
                 "margin" : 10,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "outerMargin" : true
               }
             }
           }
@@ -309,7 +405,7 @@
       },
       "entityAliases" : {
         "d048adb8-465d-590f-4b19-fd6b70b932d3" : {
-          "id" : "432b0f30-53dc-11ee-b56d-3b6138ae52ae",
+          "id" : "d048adb8-465d-590f-4b19-fd6b70b932d3",
           "alias" : "stanza",
           "filter" : {
             "type" : "entityList",
@@ -319,7 +415,7 @@
           }
         },
         "57da0473-5dbf-9546-dc29-8cae99009828" : {
-          "id" : "432b0f30-53dc-11ee-b56d-3b6138ae52ae",
+          "id" : "57da0473-5dbf-9546-dc29-8cae99009828",
           "alias" : "ciao",
           "filter" : {
             "type" : "stateEntity",
