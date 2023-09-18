@@ -1,0 +1,52 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "984e8e40-560e-11ee-bd99-3b6138ae52ae"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "bfb0a5e0-560e-11ee-bd99-3b6138ae52ae"
+    },
+    "label" : "Stanza1",
+    "name" : "Stanza1",
+    "type" : "Stanza1"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "bfb0a5e0-560e-11ee-bd99-3b6138ae52ae"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5395ef50-560e-11ee-bd99-3b6138ae52ae"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "bfb0a5e0-560e-11ee-bd99-3b6138ae52ae"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "79537eb0-560e-11ee-bd99-3b6138ae52ae"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

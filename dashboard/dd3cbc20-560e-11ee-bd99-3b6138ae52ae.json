@@ -309,7 +309,7 @@
       },
       "entityAliases" : {
         "d048adb8-465d-590f-4b19-fd6b70b932d3" : {
-          "id" : "d048adb8-465d-590f-4b19-fd6b70b932d3",
+          "id" : "432b0f30-53dc-11ee-b56d-3b6138ae52ae",
           "alias" : "stanza",
           "filter" : {
             "type" : "entityList",
@@ -319,7 +319,7 @@
           }
         },
         "57da0473-5dbf-9546-dc29-8cae99009828" : {
-          "id" : "57da0473-5dbf-9546-dc29-8cae99009828",
+          "id" : "432b0f30-53dc-11ee-b56d-3b6138ae52ae",
           "alias" : "ciao",
           "filter" : {
             "type" : "stateEntity",
